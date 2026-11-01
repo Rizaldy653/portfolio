@@ -1,16 +1,14 @@
 "use client";
 
-import {
-  Card,
-  CardHeader,
-  CardFooter,
-  CardTitle,
-  CardDescription,
-  CardContent,
-  CardAction,
-} from "./ui/card";
+import type { ReactNode } from "react";
+import { Card, CardHeader, CardTitle, CardContent } from "./ui/card";
 
-export default function WhatCard({ title, children }) {
+interface WhatCardProps {
+  title: string;
+  children: ReactNode[];
+}
+
+export default function WhatCard({ title, children }: WhatCardProps) {
   return (
     <Card>
       <CardHeader>
