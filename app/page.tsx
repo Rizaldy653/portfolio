@@ -22,11 +22,11 @@ export default function Home() {
           </p>
 
           <div className="flex flex-col gap-0.5">
-            <h1 className="font-epilogue text-5xl leading-[0.95] text-shadow-brutal-red-700 sm:text-7xl md:text-8xl lg:text-9xl">
+            <h1 className="font-epilogue font-bold text-5xl leading-[0.95] sm:text-7xl md:text-8xl md:text-shadow-brutal-red-700 lg:text-9xl lg:text-shadow-brutal-red-700">
               Software Engineer
             </h1>
 
-            <h2 className="font-epilogue text-3xl leading-[1] text-shadow-brutal-red-700 sm:text-5xl md:text-6xl lg:text-[80px]">
+            <h2 className="font-epilogue text-3xl leading-[1] sm:text-5xl md:text-6xl md:text-shadow-brutal-red-70 lg:text-[80px] lg:text-shadow-brutal-red-700">
               Fullstack Website Developer
             </h2>
           </div>

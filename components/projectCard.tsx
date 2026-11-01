@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { Github, ArrowUpRight, ExternalLink } from "lucide-react";
+import { ArrowUpRight, ExternalLink } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 import type { Project } from "./projects/project-data";
 
 type ProjectCardProps = {
@@ -58,7 +59,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
               aria-label={`View ${project.title} source code on GitHub`}
               className="inline-flex flex-1 items-center justify-center gap-2 rounded-lg border-2 border-black bg-white px-3 py-3 text-sm font-bold text-black transition-colors hover:bg-black hover:text-white focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black"
             >
-              <ExternalLink size={17} />
+              <FaGithub size={17} />
               GitHub
               <ArrowUpRight size={15} />
             </a>

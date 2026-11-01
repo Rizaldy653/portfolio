@@ -34,10 +34,6 @@ export const experiences: Experience[] = [
   },
 ];
 
-export const skills = [];
-
-export const socials = [];
-
 export const what = [
   {
     title: "Backend Development",

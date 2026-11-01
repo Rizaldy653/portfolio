@@ -67,7 +67,7 @@ export default function Navbar() {
         {/* Mobile menu */}
         <div className="flex items-center gap-2 md:hidden">
           <Button variant="neutral" size="xs">
-            <Link href="/#contact">Contact</Link>
+            <Link href="#contact">Contact</Link>
           </Button>
 
           <Sheet>
@@ -85,16 +85,16 @@ export default function Navbar() {
               side="right"
               className="w-[280px] border-l-2 border-black bg-[#FFF7FC] font-poppins sm:w-[320px]"
             >
-              <SheetHeader className="border-b-2 border-black pb-4">
+              {/* <SheetHeader className="border-b-2 border-black pb-4">
                 <SheetTitle className="text-left font-bold">
                   Navigation.
                 </SheetTitle>
                 <SheetDescription className="text-left">
                   Explore my portfolio.
                 </SheetDescription>
-              </SheetHeader>
+              </SheetHeader> */}
 
-              <div className="mt-6 flex flex-col gap-3">
+              <div className="mt-16 flex flex-col gap-3">
                 {menuItems.map((item) => {
                   return (
                     <SheetClose key={item.href}>
@@ -108,14 +108,14 @@ export default function Navbar() {
                   );
                 })}
 
-                <SheetClose>
+                {/* <SheetClose>
                   <Link
-                    href="/#contact"
+                    href="#contact"
                     className="mt-2 border-2 border-black bg-[#FFE66D] px-4 py-3 text-center font-bold shadow-[4px_4px_0px_#000] transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
                   >
                     Contact Me
                   </Link>
-                </SheetClose>
+                </SheetClose> */}
               </div>
             </SheetContent>
           </Sheet>

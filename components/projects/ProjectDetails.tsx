@@ -1,7 +1,8 @@
 // src/app/components/projects/ProjectDetails.tsx
 
 import Image from "next/image";
-import { ArrowUpRight, ExternalLink } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import { FaGithub } from "react-icons/fa";
 import type { Project } from "./project-data";
 
 type ProjectDetailsProps = {
@@ -84,7 +85,7 @@ export default function ProjectDetails({ project }: ProjectDetailsProps) {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 rounded-lg border-2 border-black bg-white px-4 py-3 text-sm font-bold transition hover:-translate-y-1 hover:shadow-[3px_3px_0px_0px_#000] focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-black"
             >
-              <ExternalLink size={17} aria-hidden="true" />
+              <FaGithub size={17} aria-hidden="true" />
               GitHub
             </a>
           )}

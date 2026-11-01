@@ -1,5 +1,3 @@
-// src/app/components/projects/project-data.ts
-
 export type Project = {
   id: string;
   title: string;
@@ -21,8 +19,7 @@ export const projects: Project[] = [
     description:
       "A web-based document management system for organizing inspection follow-up documents and improving archival workflows at Inspektorat DIY.",
     technologies: ["Laravel", "MySQL", "Tailwind CSS", "Alpine.js"],
-    image: "/images/projects/sitilap.png",
-    demoUrl: "https://sitilap.cloud",
+    image: "/images/projects/sitilap.webp",
     githubUrl: "https://github.com/Rizaldy653",
   },
   {
@@ -33,8 +30,7 @@ export const projects: Project[] = [
     description:
       "An inventory management application for organizing equipment, categories, locations, and item conditions.",
     technologies: ["Laravel", "Filament", "MySQL"],
-    image: "/images/projects/inventory.png",
-    demoUrl: "https://palasmega.rizaldy.cloud",
+    image: "/images/projects/inventory filament.webp",
     githubUrl: "https://github.com/Rizaldy653",
   },
   {
@@ -45,7 +41,7 @@ export const projects: Project[] = [
     description:
       "A REST API built with Express and PostgreSQL, using a layered architecture to organize routes, controllers, services, and database operations.",
     technologies: ["Node.js", "Express", "PostgreSQL", "JWT"],
-    image: "/images/projects/inventory-api.png",
+    image: "/images/projects/api.webp",
     githubUrl: "https://github.com/Rizaldy653",
   },
   {
@@ -56,8 +52,7 @@ export const projects: Project[] = [
     description:
       "A Laravel API project demonstrating RESTful resource management and token-based authentication.",
     technologies: ["Laravel", "PHP", "Sanctum"],
-    image: "/images/projects/todo-api.png",
-    demoUrl: "https://todo.rizaldy.cloud/api",
+    image: "/images/projects/api.webp",
     githubUrl: "https://github.com/Rizaldy653",
   },
   {
@@ -68,7 +63,43 @@ export const projects: Project[] = [
     description:
       "A backend project using Express, MongoDB, Redis, and JWT to explore API development, caching, and authentication.",
     technologies: ["Express", "MongoDB", "Redis", "JWT"],
-    image: "/images/projects/note-api.png",
+    image: "/images/projects/api.webp",
+    githubUrl: "https://github.com/Rizaldy653",
+  },
+  {
+    id: "notes",
+    title: "Notes App",
+    priority: 2,
+    category: "Frontend Development",
+    description:
+      "A project using Vite React JS, browser storage, and local storage to create, read, update, and delete notes.",
+    technologies: ["Vite", "React", "JavaScript"],
+    image: "/images/projects/notes.webp",
+    demoUrl: "https://notes.rizlabs.my.id",
+    githubUrl: "https://github.com/Rizaldy653",
+  },
+  {
+    id: "to-do-app",
+    title: "To-Do and Pomodoro App",
+    priority: 2,
+    category: "Frontend Development",
+    description:
+      "A lightweight productivity dashboard built with HTML, CSS, and Vanilla JavaScript, developed with **Kiro AI** assistance. Features include task management, a Pomodoro timer, real-time clock, dynamic greetings, and quick links, with data stored in browser localStorage.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    image: "/images/projects/task.webp",
+    demoUrl: "https://to-do.rizlabs.my.id",
+    githubUrl: "https://github.com/Rizaldy653",
+  },
+  {
+    id: "expense-tracker",
+    title: "Expense Tracker App",
+    priority: 2,
+    category: "Website Development",
+    description:
+      "A beginner-friendly expense tracker application built with HTML, CSS, and Vanilla JavaScript as part of a Front-End Web Development program. Features expense management and transaction tracking, with JavaScript handling the application's core functionality.",
+    technologies: ["HTML", "CSS", "JavaScript"],
+    image: "/images/projects/expense.webp",
+    demoUrl: "https://expense-tracker.rizlabs.my.id",
     githubUrl: "https://github.com/Rizaldy653",
   },
 ];
