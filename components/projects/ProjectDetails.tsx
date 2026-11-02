@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
-import type { Project } from "./project-data";
+import type { Project } from "../../data/project";
 
 type ProjectDetailsProps = {
   project: Project;

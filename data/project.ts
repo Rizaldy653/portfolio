@@ -20,7 +20,7 @@ export const projects: Project[] = [
       "A web-based document management system for organizing inspection follow-up documents and improving archival workflows at Inspektorat DIY.",
     technologies: ["Laravel", "MySQL", "Tailwind CSS", "Alpine.js"],
     image: "/images/projects/sitilap.webp",
-    githubUrl: "https://github.com/Rizaldy653",
+    githubUrl: "https://github.com/Rizaldy653/doc-storage",
   },
   {
     id: "inventory",
@@ -31,7 +31,7 @@ export const projects: Project[] = [
       "An inventory management application for organizing equipment, categories, locations, and item conditions.",
     technologies: ["Laravel", "Filament", "MySQL"],
     image: "/images/projects/inventory filament.webp",
-    githubUrl: "https://github.com/Rizaldy653",
+    githubUrl: "https://github.com/Rizaldy653/inventory-palasmega",
   },
   {
     id: "inventory-api",
@@ -42,7 +42,7 @@ export const projects: Project[] = [
       "A REST API built with Express and PostgreSQL, using a layered architecture to organize routes, controllers, services, and database operations.",
     technologies: ["Node.js", "Express", "PostgreSQL", "JWT"],
     image: "/images/projects/api.webp",
-    githubUrl: "https://github.com/Rizaldy653",
+    githubUrl: "https://github.com/Rizaldy653/inventory-palasmegaV2",
   },
   {
     id: "todo-api",
@@ -53,7 +53,7 @@ export const projects: Project[] = [
       "A Laravel API project demonstrating RESTful resource management and token-based authentication.",
     technologies: ["Laravel", "PHP", "Sanctum"],
     image: "/images/projects/api.webp",
-    githubUrl: "https://github.com/Rizaldy653",
+    githubUrl: "https://github.com/Rizaldy653/todo-API",
   },
   {
     id: "note-api",
@@ -64,7 +64,7 @@ export const projects: Project[] = [
       "A backend project using Express, MongoDB, Redis, and JWT to explore API development, caching, and authentication.",
     technologies: ["Express", "MongoDB", "Redis", "JWT"],
     image: "/images/projects/api.webp",
-    githubUrl: "https://github.com/Rizaldy653",
+    githubUrl: "https://github.com/Rizaldy653/note-API-express",
   },
   {
     id: "notes",
@@ -76,7 +76,7 @@ export const projects: Project[] = [
     technologies: ["Vite", "React", "JavaScript"],
     image: "/images/projects/notes.webp",
     demoUrl: "https://notes.rizlabs.my.id",
-    githubUrl: "https://github.com/Rizaldy653",
+    githubUrl: "https://github.com/Rizaldy653/personal-note",
   },
   {
     id: "to-do-app",
@@ -88,7 +88,8 @@ export const projects: Project[] = [
     technologies: ["HTML", "CSS", "JavaScript"],
     image: "/images/projects/task.webp",
     demoUrl: "https://to-do.rizlabs.my.id",
-    githubUrl: "https://github.com/Rizaldy653",
+    githubUrl:
+      "https://github.com/Rizaldy653/CodingCamp-200426-arizaldyharriskusuma",
   },
   {
     id: "expense-tracker",
@@ -100,6 +101,6 @@ export const projects: Project[] = [
     technologies: ["HTML", "CSS", "JavaScript"],
     image: "/images/projects/expense.webp",
     demoUrl: "https://expense-tracker.rizlabs.my.id",
-    githubUrl: "https://github.com/Rizaldy653",
+    githubUrl: "https://github.com/Rizaldy653/expenses-tracker",
   },
 ];

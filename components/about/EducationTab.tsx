@@ -1,6 +1,8 @@
 // components/about/EducationTab.tsx
 
-import { ArrowUpRight, GraduationCap, Lightbulb } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+
+import { FaGithub } from "react-icons/fa";
 
 import AboutSectionHeading from "@/components/about/AboutSectionHeading";
 
@@ -24,10 +26,6 @@ export default function EducationTab() {
         <CardContent className="p-5 sm:p-7">
           <div className="flex flex-col gap-5 sm:flex-row sm:items-start sm:justify-between">
             <div className="flex items-start gap-4">
-              <div className="flex size-12 shrink-0 items-center justify-center border-2 border-black bg-[#FFE66D]">
-                <GraduationCap className="size-6" />
-              </div>
-
               <div>
                 <p className="mb-2 text-xs font-bold uppercase tracking-widest text-muted-foreground">
                   {education.period}
@@ -84,10 +82,6 @@ export default function EducationTab() {
       {/* Thesis */}
       <Card className="rounded-none border-2 border-black bg-[#FFE66D] shadow-[6px_6px_0px_0px_#000]">
         <CardHeader>
-          <div className="mb-2 flex size-10 items-center justify-center border-2 border-black bg-white">
-            <Lightbulb className="size-5" />
-          </div>
-
           <p className="text-xs font-bold uppercase tracking-widest">
             Undergraduate Thesis
           </p>
@@ -123,8 +117,9 @@ export default function EducationTab() {
             rel="noreferrer"
             className="inline-flex min-h-11 items-center gap-2 border-2 border-black bg-white px-4 py-2 text-sm font-bold shadow-[3px_3px_0px_0px_#000] transition-transform hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none"
           >
+            <FaGithub className="size-4" />
             Explore SITILAP
-            <ArrowUpRight className="size-4" />
+            {/* <ArrowUpRight className="size-4" /> */}
           </a>
         </CardContent>
       </Card>

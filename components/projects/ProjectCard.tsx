@@ -1,7 +1,7 @@
 // src/app/components/projects/ProjectCard.tsx
 
 import { ArrowUpRight } from "lucide-react";
-import type { Project } from "./project-data";
+import type { Project } from "../../data/project";
 
 type ProjectCardProps = {
   project: Project;

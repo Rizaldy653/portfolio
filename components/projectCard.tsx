@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { ArrowUpRight, ExternalLink } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
-import type { Project } from "./projects/project-data";
+import type { Project } from "../data/project";
 
 type ProjectCardProps = {
   project: Project;

@@ -3,7 +3,7 @@
 import { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import ProjectDetails from "./ProjectDetails";
-import { projects } from "./project-data";
+import { projects } from "../../data/project";
 
 const VISIBLE_CARDS = 5;
 

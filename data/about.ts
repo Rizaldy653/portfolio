@@ -1,7 +1,7 @@
 // data/about.ts
 
 export const aboutProfile = {
-  name: "Rizaldy Harris Kusuma",
+  name: "Rizaldy Kusuma",
   headline: "Software Engineer",
   introduction:
     "I'm an Information Technology graduate interested in building practical, maintainable, and user-friendly software applications.",
@@ -26,7 +26,7 @@ export const aboutProfile = {
   facts: [
     {
       label: "Education",
-      value: "B.Sc. in Information Technology",
+      value: "Bachelor's Degree in Information Technology",
     },
     {
       label: "University",
@@ -43,14 +43,16 @@ export const aboutProfile = {
   ],
 
   github: "https://github.com/Rizaldy653",
+
+  linkedin: "https://linkedin.com/in/rizaldy-kusuma",
 };
 
 export const education = {
   institution: "Universitas Negeri Yogyakarta",
-  degree: "Bachelor of Information Technology",
+  degree: "Bachelor's Degree Information Technology",
   abbreviation: "S1 Teknologi Informasi",
   period: "2021 – 2025",
-  gpa: "3.62 / 4.00",
+  gpa: "3.64 / 4.00",
 
   description:
     "Developed a foundation in programming, database management, web development, and software engineering.",
@@ -86,7 +88,47 @@ export interface Certification {
 }
 
 // Add only certifications and courses you have actually completed.
-export const certifications: Certification[] = [];
+export const certifications: Certification[] = [
+  {
+    name: "Website Development: Back End",
+    issuer: "MySkill",
+    date: "October 2025",
+    credentialId: "289254/WEB/LM/10/2025",
+    category: "course",
+  },
+  {
+    name: "Belajar Membuat Aplikasi Web dengan React",
+    issuer: "Dicoding Indonesia",
+    date: "July 2026",
+    credentialId: "98XW0D5E0XM3",
+    credentialUrl: "https://dicoding.com/certificates/98XW0D5E0XM3",
+    category: "course",
+  },
+  {
+    name: "Belajar Dasar Pemrograman Web",
+    issuer: "Dicoding Indonesia",
+    date: "June 2026",
+    credentialId: "6RPN7LVG5X2M",
+    credentialUrl: "https://dicoding.com/certificates/6RPN7LVG5X2M",
+    category: "course",
+  },
+  {
+    name: "Belajar Dasar Pemrograman JavaScript",
+    issuer: "Dicoding Indonesia",
+    date: "July 2026",
+    credentialId: "6RPN7LVO5X2M",
+    credentialUrl: "https://dicoding.com/certificates/6RPN7LVO5X2M",
+    category: "course",
+  },
+  {
+    name: "Belajar Membuat Front-End Web untuk Pemula",
+    issuer: "Dicoding Indonesia",
+    date: "July 2026",
+    credentialId: "MEPJO49QJZ3V",
+    credentialUrl: "https://dicoding.com/certificates/MEPJO49QJZ3V",
+    category: "course",
+  },
+];
 
 export const experience = [
   {
@@ -111,45 +153,5 @@ export const experience = [
       "Git",
       "Microsoft Office",
     ],
-  },
-];
-
-export const selectedProjects = [
-  {
-    name: "Inventory Management System",
-    category: "Web Application",
-
-    description:
-      "An asset and equipment inventory application for managing inventory records, categories, locations, and item conditions.",
-
-    technologies: ["Laravel", "Filament", "MySQL"],
-
-    // Add the actual project URL when available.
-    url: "",
-  },
-
-  {
-    name: "Inventory REST API",
-    category: "Backend Development",
-
-    description:
-      "A backend inventory API project focused on structured Express.js architecture, PostgreSQL integration, and RESTful endpoints.",
-
-    technologies: ["Node.js", "Express.js", "PostgreSQL"],
-
-    // Add the actual repository URL when available.
-    url: "",
-  },
-
-  {
-    name: "SITILAP",
-    category: "Academic Project",
-
-    description:
-      "A web-based document management system for follow-up inspection records, developed as an undergraduate thesis project.",
-
-    technologies: ["Laravel", "MySQL", "Tailwind CSS"],
-
-    url: "https://sitilap.cloud",
   },
 ];

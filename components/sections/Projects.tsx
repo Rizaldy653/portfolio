@@ -1,7 +1,7 @@
 "use client";
 
 import ProjectCard from "@/components/projectCard";
-import { projects } from "@/components/projects/project-data";
+import { projects } from "@/data/project";
 
 export default function Projects() {
   const featuredProjects = projects.filter((project) => project.priority === 1);

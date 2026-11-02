@@ -14,7 +14,6 @@ export default function CertificationsTab() {
   return (
     <section className="space-y-8">
       <AboutSectionHeading
-        number="03"
         title="Learning & credentials"
         description="Professional certifications, completed courses, and additional learning."
       />

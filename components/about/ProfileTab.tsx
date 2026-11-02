@@ -2,7 +2,9 @@
 
 import type { ReactNode } from "react";
 
-import { ArrowUpRight, Code2, Heart, UserRound } from "lucide-react";
+import { ArrowUpRight, Code2, Heart } from "lucide-react";
+
+import { FaLinkedin } from "react-icons/fa";
 
 import AboutSectionHeading from "@/components/about/AboutSectionHeading";
 
@@ -49,7 +51,6 @@ export default function ProfileTab() {
   return (
     <section className="space-y-8">
       <AboutSectionHeading
-        number="01"
         title="A little about me"
         description="My background, interests, and approach to software development."
       />
@@ -58,10 +59,6 @@ export default function ProfileTab() {
       <div className="grid gap-6 lg:grid-cols-[1.3fr_0.7fr]">
         <Card className="rounded-none border-2 border-black bg-[#FFE66D] shadow-[6px_6px_0px_0px_#000]">
           <CardContent className="p-5 sm:p-7">
-            <div className="mb-5 flex size-12 items-center justify-center border-2 border-black bg-white">
-              <UserRound className="size-6" />
-            </div>
-
             <p className="mb-2 text-sm font-bold uppercase tracking-widest">
               Hello, I'm
             </p>
@@ -80,15 +77,27 @@ export default function ProfileTab() {
               {aboutProfile.description}
             </p>
 
-            <a
-              href={aboutProfile.github}
-              target="_blank"
-              rel="noreferrer"
-              className="mt-6 inline-flex min-h-11 items-center gap-2 border-2 border-black bg-white px-4 py-2 text-sm font-bold shadow-[3px_3px_0px_0px_#000] transition-transform hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none"
-            >
-              Visit GitHub
-              <ArrowUpRight className="size-4" />
-            </a>
+            <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:flex-wrap">
+              <a
+                href={aboutProfile.github}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-11 w-full items-center justify-center gap-2 border-2 border-black bg-white px-4 py-2 text-sm font-bold shadow-[3px_3px_0px_0px_#000] transition-transform hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none sm:w-auto"
+              >
+                Visit GitHub
+                <ArrowUpRight className="size-4 shrink-0" />
+              </a>
+
+              <a
+                href={aboutProfile.linkedin}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex min-h-11 w-full items-center justify-center gap-2 border-2 border-black bg-white px-4 py-2 text-sm font-bold shadow-[3px_3px_0px_0px_#000] transition-transform hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none sm:w-auto"
+              >
+                Visit LinkedIn
+                <FaLinkedin className="size-4 shrink-0" />
+              </a>
+            </div>
           </CardContent>
         </Card>
 
