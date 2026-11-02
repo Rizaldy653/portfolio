@@ -1,7 +1,3 @@
-// components/about/EducationTab.tsx
-
-import { ArrowUpRight } from "lucide-react";
-
 import { FaGithub } from "react-icons/fa";
 
 import AboutSectionHeading from "@/components/about/AboutSectionHeading";
@@ -16,7 +12,6 @@ export default function EducationTab() {
   return (
     <section className="space-y-8">
       <AboutSectionHeading
-        number="02"
         title="My academic journey"
         description="The academic foundation behind my technical knowledge and software development skills."
       />
@@ -119,7 +114,6 @@ export default function EducationTab() {
           >
             <FaGithub className="size-4" />
             Explore SITILAP
-            {/* <ArrowUpRight className="size-4" /> */}
           </a>
         </CardContent>
       </Card>
