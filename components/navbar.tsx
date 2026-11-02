@@ -1,7 +1,7 @@
 "use client";
 
-import { usePathname } from "next/navigation";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Menu } from "lucide-react";
 
 import {
@@ -14,11 +14,8 @@ import {
 import {
   Sheet,
   SheetContent,
-  SheetDescription,
-  SheetHeader,
-  SheetTitle,
-  SheetTrigger,
   SheetClose,
+  SheetTrigger,
 } from "@/components/ui/sheet";
 
 import { Button } from "./ui/button";
@@ -32,6 +29,8 @@ const menuItems = [
 export default function Navbar() {
   const pathname = usePathname();
 
+  const contactHref = pathname === "/" ? "#contact" : "/#contact";
+
   return (
     <nav className="fixed top-0 z-50 w-full border-2 border-black bg-[#FFF7FC] font-poppins">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-3 py-2 md:px-6">
@@ -40,34 +39,28 @@ export default function Navbar() {
           <span className="text-base font-bold sm:text-lg">Rizaldy Kusuma</span>
         </Link>
 
-        {/* Desktop navigation */}
+        {/* Desktop Navigation */}
         <NavigationMenu className="absolute left-1/2 hidden -translate-x-1/2 md:flex">
           <NavigationMenuList>
-            {menuItems.map((item) => {
-              return (
-                <NavigationMenuItem key={item.href}>
-                  <NavigationMenuLink href={item.href}>
-                    <span className="text-sm font-semibold">{item.label}</span>
-                  </NavigationMenuLink>
-                </NavigationMenuItem>
-              );
-            })}
+            {menuItems.map((item) => (
+              <NavigationMenuItem key={item.href}>
+                <NavigationMenuLink href={item.href}>
+                  <span className="text-sm font-semibold">{item.label}</span>
+                </NavigationMenuLink>
+              </NavigationMenuItem>
+            ))}
           </NavigationMenuList>
         </NavigationMenu>
 
-        {/* Desktop contact button */}
-        <div className="hidden md:block">
-          <Button variant="neutral" size="xs">
-            <Link href="#contact">
-              <span className="text-sm">Contact Me</span>
-            </Link>
-          </Button>
-        </div>
+        {/* Desktop Contact */}
+        <Button variant="neutral" size="xs" className="hidden md:inline-flex">
+          <Link href={contactHref}>Contact Me</Link>
+        </Button>
 
-        {/* Mobile menu */}
+        {/* Mobile Navigation */}
         <div className="flex items-center gap-2 md:hidden">
           <Button variant="neutral" size="xs">
-            <Link href="#contact">Contact</Link>
+            <Link href={contactHref}>Contact</Link>
           </Button>
 
           <Sheet>
@@ -85,37 +78,28 @@ export default function Navbar() {
               side="right"
               className="w-[280px] border-l-2 border-black bg-[#FFF7FC] font-poppins sm:w-[320px]"
             >
-              {/* <SheetHeader className="border-b-2 border-black pb-4">
-                <SheetTitle className="text-left font-bold">
-                  Navigation.
-                </SheetTitle>
-                <SheetDescription className="text-left">
-                  Explore my portfolio.
-                </SheetDescription>
-              </SheetHeader> */}
+              <div className="mt-16 flex flex-col gap-2">
+                {menuItems.map((item) => (
+                  <SheetClose asChild key={item.href}>
+                    <Link
+                      href={item.href}
+                      className={`px-4 py-3 font-semibold transition-colors hover:bg-[#FFE66D] ${
+                        pathname === item.href ? "bg-[#FFE66D]" : ""
+                      }`}
+                    >
+                      {item.label}
+                    </Link>
+                  </SheetClose>
+                ))}
 
-              <div className="mt-16 flex flex-col gap-3">
-                {menuItems.map((item) => {
-                  return (
-                    <SheetClose key={item.href}>
-                      <Link
-                        href={item.href}
-                        className={`px-4 py-3 font-semibold transition-all`}
-                      >
-                        {item.label}
-                      </Link>
-                    </SheetClose>
-                  );
-                })}
-
-                {/* <SheetClose>
+                <SheetClose asChild>
                   <Link
-                    href="#contact"
-                    className="mt-2 border-2 border-black bg-[#FFE66D] px-4 py-3 text-center font-bold shadow-[4px_4px_0px_#000] transition-all hover:translate-x-1 hover:translate-y-1 hover:shadow-none"
+                    href={contactHref}
+                    className="mt-2 border-2 border-black bg-[#FFE66D] px-4 py-3 text-center font-bold shadow-[3px_3px_0px_#000] transition-transform hover:translate-x-0.5 hover:translate-y-0.5 hover:shadow-none"
                   >
                     Contact Me
                   </Link>
-                </SheetClose> */}
+                </SheetClose>
               </div>
             </SheetContent>
           </Sheet>
